@@ -1,6 +1,11 @@
 var hitrn = 0;
 var score = 0;
-var timeLimit = 60;
+
+var timeLimit = Number(
+  window.location.search.substring(1, window.location.search.length)
+);
+
+document.querySelector("#timerval").textContent = timeLimit;
 function incrementScore() {
   score += 10;
   document.querySelector("#scoreval").textContent = score;

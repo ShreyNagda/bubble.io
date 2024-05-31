@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="This is a frontend javascript project created for fun. It is a game in which you need to find the specified hit number which ranges from 0 to 10. For each correct hit you get plus 10 points."
+    />
+    <title>Bubble Game | Shrey Nagda</title>
+    <link rel="stylesheet" href="game.css" />
+    <!-- Favicon for the page -->
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon" />
+    <!-- Refresh Icon  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- Google Font - Comic Neue -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <div id="title">Bubble Game</div>
+      <div id="panel">
+        <div id="ptop">
+          <div class="elem">
+            <h4 class="text">Hit</h4>
+            <div id="hitval" class="box">0</div>
+          </div>
+          <div class="elem">
+            <h4 class="text">Timer</h4>
+            <div id="timerval" class="box">60</div>
+          </div>
+          <div class="elem">
+            <h4 class="text">Score</h4>
+            <div id="scoreval" class="box">0</div>
+          </div>
+        </div>
+        <div id="pbtm"></div>
+      </div>
+    </div>
+  </body>
+  <script src="game.js"></script>
+</html>

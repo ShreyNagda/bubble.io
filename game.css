@@ -12,11 +12,18 @@ body {
 }
 #main {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20px;
   height: 100%;
   width: 100%;
   background-color: aquamarine;
+}
+
+#title {
+  font-size: 2rem;
+  font-weight: 600;
 }
 #panel {
   height: 80%;
@@ -106,15 +113,29 @@ body {
   font-variation-settings: "FILL" 0, "wght" 900, "GRAD" 0, "opsz" 24;
 }
 @media screen and (max-width: 426px) {
+  #main {
+    /* padding: 10px 0px; */
+    gap: 10px;
+  }
+  #main:nth-child(1) {
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
   #panel {
     width: 90%;
-    height: 95%;
+    height: 90%;
   }
   #ptop {
     padding: 0.5rem 0.2rem;
   }
   .elem {
     gap: 5px;
+  }
+  .elem h4 {
+    font-size: 0.9rem;
+  }
+  .box {
+    font-size: 1rem;
   }
   #pbtm {
     grid-template-columns: repeat(8, 1fr);
@@ -129,6 +150,13 @@ body {
 }
 
 @media screen and (min-width: 426px) and (max-width: 769px) {
+  #main {
+    gap: 15px;
+  }
+  #main:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
   #panel {
     width: 90%;
     height: 90%;

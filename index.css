@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  max-width: 100vw;
+  max-height: 100vh;
+  font-family: "Comic Neue", cursive;
+}
+#main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#title {
+  font-size: 2.3rem;
+  font-weight: 800;
+}
+
+#config {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#config h2 {
+  font-size: 1.1rem;
+}
+
+input[type="radio"] {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+label {
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+input[type="radio"] + label {
+  background-color: transparent;
+  border: 2px solid aquamarine;
+}
+
+input[type="radio"]:checked + label {
+  background-color: aquamarine;
+}
+
+#submit-btn {
+  padding: 10px 25px;
+  outline: none;
+  border: none;
+  background-color: aquamarine;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
