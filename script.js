@@ -1,7 +1,6 @@
 var hitrn = 0;
 var score = 0;
 var timeLimit = 10;
-
 function incrementScore() {
   score += 10;
   document.querySelector("#scoreval").textContent = score;
