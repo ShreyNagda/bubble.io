@@ -8,7 +8,6 @@ body {
   width: 100%;
   max-width: 100vw;
   max-height: 100vh;
-  zoom: reset;
   font-family: "Comic Neue", cursive;
 }
 #main {
