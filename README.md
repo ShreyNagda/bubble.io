@@ -7,7 +7,7 @@ A simple number finder game in which you have to find the hit number. Game runs 
 2. CSS
 3. JS
 
-# Things learned
+# Concepts learned
 - Basic HTML Layout
 - CSS Styling
 - Javascript DOM manipulation
