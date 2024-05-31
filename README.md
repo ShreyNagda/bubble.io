@@ -6,6 +6,7 @@ A simple number finder game in which you have to find the hit number. Game runs 
 1. HTML
 2. CSS
 3. JS
+4. Google Fonts (for Fonts & Icons)
 
 # Concepts learned
 - Basic HTML Layout
