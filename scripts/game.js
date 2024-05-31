@@ -22,11 +22,15 @@ function startTimer() {
     if (currentTimer === 0) {
       clearInterval(timer);
       document.querySelector("#pbtm").style.display = "flex";
-      document.querySelector(
-        "#pbtm"
-      ).innerHTML = `<div><div id="gameover">Game Over!</div><div>Your Score: ${score}</div><div>Refresh to Restart</div><button id="refresh-btn"><span class="material-symbols-outlined">
-refresh
-</span></button></div>`;
+      // </div>`;
+      document.querySelector("#pbtm").innerHTML = `<div id="gameover">
+            <div id="message">Game Over!</div>
+            <div id="score">Score: ${score} </div>
+            <div id="refresh-btn">
+              <p>Restart</p>
+              <span class="material-symbols-outlined"> refresh </span>
+            </div>
+          </div>`;
       document
         .querySelector("#refresh-btn")
         .addEventListener("click", function () {

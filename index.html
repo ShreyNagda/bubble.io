@@ -10,7 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="index.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
     <div id="main">
@@ -26,8 +29,17 @@
         <input type="radio" name="time" id="time_3" value="60" />
         <label for="time_3">60</label>
       </div>
-      <button id="submit-btn">Start Game</button>
+      <a id="submit-btn">Start Game</a>
     </div>
-    <script src="index.js"></script>
+    <script>
+      document
+        .querySelector("#submit-btn")
+        .addEventListener("click", function (ev) {
+          var timeVal = document.querySelector(
+            `input[name="time"]:checked`
+          ).value;
+          ev.target.href = `game.html?${timeVal}`;
+        });
+    </script>
   </body>
 </html>
