@@ -15,14 +15,19 @@ function makeNewRandomHit() {
 function startTimer() {
   currentTimer = timeLimit;
   var timer = setInterval(function () {
-    if (currentTimer <= 0) {
+    if (currentTimer === 0) {
       clearInterval(timer);
-      //   document.querySelector(
-      //     "#pbtm"
-      //   ).innerText = `<div style="height: auto;">Game Over</div>`;
+      document.querySelector("#pbtm").style.display = "flex";
       document.querySelector(
         "#pbtm"
-      ).innerHTML = `<div><div id="gameover">Game Over!</div><div>Refresh to Restart</div><div>Your Score: ${score}</div></div>`;
+      ).innerHTML = `<div><div id="gameover">Game Over!</div><div>Your Score: ${score}</div><div>Refresh to Restart</div><button id="refresh-btn"><span class="material-symbols-outlined">
+refresh
+</span></button></div>`;
+      document
+        .querySelector("#refresh-btn")
+        .addEventListener("click", function () {
+          window.location.reload();
+        });
     } else {
       currentTimer--;
       document.querySelector("#timerval").textContent = currentTimer;

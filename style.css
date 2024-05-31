@@ -58,12 +58,13 @@ body {
 
 #pbtm {
   height: calc(100% - 60px);
-  padding: 10px;
-  display: flex;
-  justify-content: center;
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  place-items: center;
+  gap: 5px;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 7px;
+  justify-content: center;
 }
 
 .bubble {
@@ -88,19 +89,32 @@ body {
   font-size: 1.3rem;
 }
 
+#refresh-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 900, "GRAD" 0, "opsz" 24;
+}
 @media screen and (max-width: 426px) {
   #panel {
     width: 90%;
     height: 95%;
   }
-  #ptop {
-    padding: 0 4px;
-  }
   .elem {
     gap: 5px;
   }
   #pbtm {
-    gap: 7.5px;
+    grid-template-columns: repeat(8, 1fr);
+    margin: 5px;
+    gap: 3px;
   }
   .bubble {
     width: 25px;
